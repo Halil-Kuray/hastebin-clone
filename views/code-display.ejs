@@ -12,14 +12,14 @@
 </head>
 <body>
 
-    <div class="wrapper">
+    <%- include('_buttons.ejs' , {id: locals.id} ) %>
 
+    <div class="wrapper">
         <div class="line-numbers">
             <% for (let index=1; index <= code.split('\n').length; index++) { %>
                 <div><%= index %> </div>
             <% } %>
-        </div>
-
+        </div>        
         <pre><code id="code-display"> <%= code  %> </code></pre>
     </div>
 
