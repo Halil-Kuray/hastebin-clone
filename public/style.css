@@ -1,0 +1,85 @@
+body{
+    background-color: #031d24;
+    margin: 0;
+}
+.wrapper{
+    display: flex;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+pre{
+    margin: 0;
+}
+#code-display{
+    padding: 0 1rem;
+}
+
+.line-numbers{
+    color: rgb(137, 165, 193);
+    font-family: Courier;
+    text-align: end;
+}
+
+textarea{
+    background-color: transparent;
+    resize: none;
+    width: 100%;
+    color: rgb(125, 129, 129);
+    padding: 0;
+    margin-left: 1rem;
+    border: none;
+    outline: none;
+    min-height: calc(100vh - 2.1rem);
+}
+
+.buttons-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 0.125;
+    transition: opacity 250ms ease-in-out;
+    background-color: #83e5ff;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.buttons-container:hover{
+    opacity: 1;
+}
+
+.logo{
+    font-size:  2rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: inline-block;
+}
+
+.logo:hover{
+    text-decoration: underline;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top:0.5rem ;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    margin: 0.3rem;
+    color: #1d2c30;
+    border: 1px solid rgb(7, 65, 7);
+    border-radius: 2px;
+    cursor: pointer;
+    background: none;
+    transition: background-color 200ms ease-in-out;
+}
+
+.btn:hover{
+    background-color: #094b34; ;
+}
