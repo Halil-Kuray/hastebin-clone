@@ -13,14 +13,14 @@
 <body>
 
     <div class="wrapper">
-        
+
         <div class="line-numbers">
-            <% for (let index=1; index <= lineNumbers; index++) { %>
+            <% for (let index=1; index <= code.split('\n').length; index++) { %>
                 <div><%= index %> </div>
             <% } %>
         </div>
 
-        <pre><code id="code-display" class="language-plaintext"> <%= code  %> </code></pre>
+        <pre><code id="code-display"> <%= code  %> </code></pre>
     </div>
 
     
