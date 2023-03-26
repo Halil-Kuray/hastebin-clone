@@ -5,12 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js" integrity="sha512-bgHRAiTjGrzHzLyKOnpFvaEpGzJet3z4tZnXGjpsCcqOnAH6VGUx9frc5bcIhKTVLEiCO6vEhNAgx5jtLUYrfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/solarized-dark.min.css" integrity="sha512-kBHeOXtsKtA97/1O3ebZzWRIwiWEOmdrylPrOo3D2+pGhq1m+1CroSOVErIlsqn1xmYowKfQNVDhsczIzeLpmg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>hljs.highlightAll();</script>
 </head>
 <body>
 
-    <h1>Code Display</h1>
+    <div class="wrapper">
+        <div class="line-numbers">
+            <% for (let index=1; index <= lineNumbers; index++) { %>
+                <div><%= index %> </div>
+            <% } %>
+        </div>
+    </div>
 
-    <pre><code> <%= code  %> </code></pre>
+    <pre><code id="code-display" class="language-plaintext"> <%= code  %> </code></pre>
     
 </body>
 </html>
